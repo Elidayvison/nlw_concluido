@@ -1,0 +1,62 @@
+<!-- "! + enter" tecla de atalho-->
+
+
+{% extends "layout.html" %}
+
+{% set pageId = "page-search-results" %}        
+
+{% block title %}
+<title>Resultado da pesquisa</title>
+{% endblock title %}
+        
+{% block styles %}
+<link rel="stylesheet" href="/styles/search-results.css">
+
+{% endblock styles %} 
+
+      
+        {#<div class="content" #}        
+
+{% block content %}
+{% include "partials/page-header.html" %}
+<main>
+    <h4>
+        <strong>2 pontos</strong> encontrados
+    </h4>
+    
+    <div class="cards">
+        <div class="card">
+            <img src="/assets/Image.svg" alt="Coletoria">
+            <h1>Coletoria</h1>
+            <h3>Residuos Eletronicos, Lâmpadas</h3>
+            <p>
+                Pernambuco, Carpina <br/>
+                Elidayvison José, Caja <br/>
+                Numero 250
+            </p>
+        </div>
+    
+
+        <div class=" card">
+            <img src="/assets/Image.svg" alt="Papersider">
+            <h1>Papersider</h1>
+            <h3>Papéis e Papelão</h3>
+                <p>
+                    Pernambuco, Carpina <br/>
+                    Elidayvison José, Caja <br/>
+                    Numero 250
+                </p>
+        </div>
+    </div>
+</main>
+    
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts/index.js"></script>
+{% endblock scripts %}              
+
+  
+
+
+    
