@@ -75,7 +75,7 @@ server.get("/create-point", (req, res) => {
             console.log("Cadrastro realizado com sucesso")
             console.log(this)
 
-            return res.send("create-point.html", {saved: true})
+            return res.render("create-point.html", {saved: true})
 
 
         }

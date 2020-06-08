@@ -69,7 +69,7 @@ db.serialize(() => {
 
     }
 
-    //db.run(query, values, afterInsertData)
+    db.run(query, values, afterInsertData)
 
 
 //Consultar os dados da tabela
