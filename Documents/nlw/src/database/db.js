@@ -13,7 +13,7 @@ module.exports = db
 
 //utilizndo o banco de dados para as nossas operações
 
-/*
+
 db.serialize(() => {
 //Criar uma tabela com comandos SQL
 
@@ -56,7 +56,7 @@ db.serialize(() => {
         "Carpina",
         "Papéis e Papelão"
     ]
-
+/*
     function afterInsertData(err){
         
         if(err){
@@ -81,10 +81,10 @@ db.serialize(() => {
         console.log(rows)
     })
 
-
+*/
 //Deletar um dado da tabela
 
-    db.run(`DELETE FROM places WHERE id =  ?`, [4], function(err){
+    db.run(`DELETE FROM places WHERE id =  ?`, [8], function(err){
         if(err){
             return console.log(err)
         }
@@ -94,4 +94,4 @@ db.serialize(() => {
 
     
 })
-*/
+
